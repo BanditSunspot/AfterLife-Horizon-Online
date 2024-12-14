@@ -7,7 +7,6 @@ import { Acceuil } from './Pages/Acceuil';
 import { Boutique } from './Pages/Boutique';
 import { ViewProduct } from './Pages/ViewProduct';
 import { EvenementsMover } from './Components/EvenementsManager';
-import { Helmet } from 'react-helmet-async';
 
 class App extends Component {
   DisplayWeb(){
