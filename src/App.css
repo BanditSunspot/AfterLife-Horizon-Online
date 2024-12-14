@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: rgb(0,0,0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.WebPageLogo{
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ProductsArea{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  gap: 10px;
+  justify-content: center; /* Centre la grille horizontalement */
+  align-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.ProductsArea .Product{
+  background-color: #3498db;
+  width: 100%;
+  padding-top: 100%; /* Maintient une hauteur égale à la largeur pour former un carré */
+  position: relative;
+}
+
+.ProductsArea .Product .Content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("Images/IconWeb.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ProductsArea .Product .Content .Name {
+  position: absolute;
+  top: 40%; 
+  left: 0%; 
+  transform: translate(0%, -50%);
+  width: 100%;
+  font-size: 40px; 
+  text-align: center;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.HeaderBanner {
+  /*background-image: url("../Images/sideBannerTop.png");
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #1d1c1c;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  text-align: center;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav{
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #FF9800;
+}
+nav a:active {
+  transform: scale(0.95);
+}
+
+.navigation a:hover {
+  color: #ff9800;
+}
+
+.NavHead{
+    z-index: 1;
+}
+
+main {
+  text-align: left;
+}
+
+footer {
+  /*background-image: url("../Images/sideBannerTop.png");
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  clear: both;
+}
+
+.footer-section {
+  margin: 20px 0;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ff9800;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.ImgBanner{
+  background-image: url("Images/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*float: left;*/
+  height: 650px;
+  width: 100%;
+  margin-top: 175px;
+}
+
+.SideBanner{
+  background-image: url("Images/sideBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 5%;
+  height: 650px;
+  float: left;
+}
+
+.SideBannerTop{
+  background-image: url("Images/sideBannerTop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100px;
+  clear: both;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 40px; 
+  text-align: center;
+}
+
+.Annonces{
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+
+.ArrowSpan{
+  padding-top: 10px;
+}
+
+.Annonces video{
+  text-align: center;
+}
+
+.Evenements{
+  color: white;
+  text-align: center;
+}
+
+.Evenements p{
+  width: 30%;
+}
+
+.Evenements div{
+  background-color: black;
+  position: absolute;
+  width: 35%;
+  min-width: 35%;
+}
+
+.Evenements .LeftSide{
+  margin-top: -34px; z-index: 1;
+}
+
+.Evenements .RightSide{
+  margin-top: -34px; z-index: 1; margin-left: 65%;
+}
+
+.MemberRole{
+  color: aqua;
+  text-align: center;
+}
+
+.TeamDisplay{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.MembersContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.MemberDisplayer{
+  width: 400px;
+  background-color: #333;
+}
+
+.MemberImageContainer{
+  width: 140px;
+  height: 140px;
+  background-color: #FF9800;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.MemberImage{
+  border-radius: 50%;
+  margin-top: 4.3%;
+}
+
+.MemberName, .MemberDesc{
+  color: rgb(175, 175, 175);
+}
+
+.fixed-banner {
+  position: fixed; /* Keeps the banner fixed relative to the viewport */
+  top: 0;         /* Position it at the top of the page */
+  left: 0;        /* Align it to the left edge of the page */
+  width: 100%;    /* Make it span the full width of the screen */
+  background-color: #333; /* A background color for visibility */
+  color: #fff;    /* Text color */
+  align-items: center;
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add some padding for better appearance */
+  z-index: 1000;  /* Ensure it appears above other content */
+}
+
+.SocialTab {
+  display: flex;
+  align-items: center; /* Aligns the center of images */
+  justify-content: center; /* Optional: Center-aligns images horizontally */
+  gap: 10px; /* Space between images */
+  height: 80px; /* Define a consistent height for the container */
 }
