@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import { Layout } from './Components/Layout';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -7,17 +7,16 @@ import { Acceuil } from './Pages/Acceuil';
 import { Boutique } from './Pages/Boutique';
 import { ViewProduct } from './Pages/ViewProduct';
 import { EvenementsMover } from './Components/EvenementsManager';
+import { Helmet } from 'react-helmet-async';
 
 class App extends Component {
   DisplayWeb(){
     return(
-      <>
-        <div className='application-embed'>
-          <Helmet>
-            <title>AfterLife Horizon Online</title>
-            <meta name="description" content="AfterLife Horizon Online official website" />
-          </Helmet>
-        </div>
+      <div className='application'>
+        <Helmet>
+          <title>Learning React Helmet!</title>
+          <meta name='description' content='Beginner friendly page for learning React Helmet.' />
+        </Helmet>
         <Router>
           <Routes>
             <Route element={<Layout/>}>
@@ -27,7 +26,7 @@ class App extends Component {
             </Route>
           </Routes>
         </Router>
-      </>
+      </div>
     );
   }
 
