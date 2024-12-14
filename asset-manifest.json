@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/AfterLife-Horizon-Online/static/css/main.21fba1fc.css",
+    "main.js": "/AfterLife-Horizon-Online/static/js/main.416ef2aa.js",
+    "static/js/453.adc34edb.chunk.js": "/AfterLife-Horizon-Online/static/js/453.adc34edb.chunk.js",
+    "static/media/sideBanner.png": "/AfterLife-Horizon-Online/static/media/sideBanner.6ce77cc3a5c9b5ff3495.png",
+    "static/media/sideBannerTop.png": "/AfterLife-Horizon-Online/static/media/sideBannerTop.d241aa64aec419a1061c.png",
+    "static/media/Banner.png": "/AfterLife-Horizon-Online/static/media/Banner.3fe2c31de6a318beae04.png",
+    "static/media/insta-logo.png": "/AfterLife-Horizon-Online/static/media/insta-logo.ae076bd8109112b9b9b2.png",
+    "static/media/discord-logo.png": "/AfterLife-Horizon-Online/static/media/discord-logo.d2b78a0d3e78d0eed14b.png",
+    "static/media/IconWeb.PNG": "/AfterLife-Horizon-Online/static/media/IconWeb.f5e688e684621dd24b12.PNG",
+    "static/media/X-logo.png": "/AfterLife-Horizon-Online/static/media/X-logo.2eaa5ec5656e8278d02a.png",
+    "static/media/twitch-logo.png": "/AfterLife-Horizon-Online/static/media/twitch-logo.6058689c6e6159673e81.png",
+    "static/media/tiktok-logo.png": "/AfterLife-Horizon-Online/static/media/tiktok-logo.c318231813d50504ccba.png",
+    "static/media/facebook-logo.png": "/AfterLife-Horizon-Online/static/media/facebook-logo.4b5f192898cceddd65b2.png",
+    "index.html": "/AfterLife-Horizon-Online/index.html",
+    "main.21fba1fc.css.map": "/AfterLife-Horizon-Online/static/css/main.21fba1fc.css.map",
+    "main.416ef2aa.js.map": "/AfterLife-Horizon-Online/static/js/main.416ef2aa.js.map",
+    "453.adc34edb.chunk.js.map": "/AfterLife-Horizon-Online/static/js/453.adc34edb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21fba1fc.css",
+    "static/js/main.416ef2aa.js"
+  ]
+}
